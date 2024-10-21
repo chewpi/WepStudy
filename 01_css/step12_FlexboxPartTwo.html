@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+          body{
+            height: 100vh;
+            margin: 20px;
+            display: flex; 
+            justify-content: center;  
+            align-items: center;
+            flex-wrap: nowrap ;
+          }      
+          span {
+            background-color: blue;
+            padding: 20px;
+            margin: 30px;
+          }       
+          div{
+
+            display: flex; 
+            justify-content: center;             
+            align-items: center;
+
+            display:  inline-block;
+            width:50px;
+            height:50px;
+            background-color: teal;
+          }
+          #second{
+            background-color: red;
+          }
+        </style>
+
+    </head>
+    <body>
+      <div>
+        <span>2자식이다</span>
+      </div>   
+      <div id="second">
+        <span>3자식이다</span>
+      </div>   
+      <div>
+        <span>자식이다</span>
+      </div>   
+    </body>
+</html>
+
+
+<!--
+flex 는 기본으로 x y이다 
+row이다.
+
+교차축을 바꿀수 있다 colume row
+flex-direction :  colume
+
+부모가 flex 컨테인데 자식을 flex 컨테이너로 만들수 있따.
+   div{
+     display: flex; 
+     justify-content: center;             
+     align-items: center;
+   }
+ flex-wrap: nowrap ; 은 자동으로 사이즈를 줄여주고
+ flex-wrap: wrap ; 은 모자를 경우 다음주로 넘겨 버린다.
+ flex-wrap: wrap-reverse ; 순서를 바꾼다.
+
+ flex-direction : columen-reverse 순서를 바꾸어 준다.
+ flex-direction : row-reverse 순서를 바꾸어 준다.
+.-->

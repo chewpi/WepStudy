@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        <style>
+            body{
+                display: flex;
+                height: 100;
+            }
+            @keyframes superSexyCoinFlip{
+                0% {
+                    transform: rotateX(0);
+                }
+                50% { 
+                    transform: rotateX(360deg) translateX(100px);
+                }
+                100% {
+                    transform: rotateX(360deg) translateX(100px);
+                }
+            }
+
+           img{
+                border: 5px solid black;
+                border-radius: 50px;
+                transition:  transform 5s ease-in-out;
+           }
+           img:hover{
+                transform: rotateX(90deg);
+                animation: superSexyCoinFlip 5s ease-in-out;
+            }
+        </style>
+         <body>
+            <img src="img/logo.png"/>
+         </body>
+    </head>    
+</html>
+
+<!--
+ @keyframes superSexyCoinFlip{
+                0% {
+                    transform: rotateX(0);
+                }
+                50% { 
+                    transform: rotateX(360deg) translateX(100px);
+                }
+                100% {
+                    transform: rotateX(360deg) translateX(100px);
+                }
+            }
+
+https://animista.net/ 들어가서 뭐가 있는지 확인할것.
+.-->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        <style>
+            a{
+                color: red;
+                background-color: tomato;
+                text-decoration: none;
+                border-radius: 10px;
+                font-size: 55px;
+                transition: all 1s cubic-bezier(0.6,0,0.735,0.045),
+                    border-radius 5s ease-in-out,   background-color 10s ease-out;
+            }
+            a:hover{
+                border-radius : 20px;
+                color: tomato;
+                background-color: wheat;
+            }
+        </style>
+         <body>
+            <a href="@">go home</a>        
+         </body>
+    </head>    
+</html>
+
+<!--
+    ALL를 사용하라. 그러나 예외 일경우 transition사용한다. 
+    한가지만 바꿀경우 변화되는 항목만 transition에 적는다.
+     transition: background-color 10s  ease-in-out
+
+
+
+    아래 사이트에서 에니메이션 확인할수 있따.
+    https://matthewlein.com/tools/ceaser
+
+    transition: all 1s cubic-bezier(0.6,0,0.735,0.045);
+.-->

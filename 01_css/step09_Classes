@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+          body{
+            margin: 20px;
+          }      
+          span {
+            background-color: blue;
+            padding: 20px;
+            margin: 30px;
+          }
+          .teal {
+            background-color: gray;
+            }
+          .tomato{
+            background-color: tomato;
+            color: red;
+          
+          }
+          .btn {
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        </style>
+
+    </head>
+    <body>
+       <span>Hello</span>
+       <span class="btn teal">Hello</span>
+       <span class="btn tomato">Hello</span>
+       <span>Hello</span>
+       <span class="btn teal">Hello</span>
+       <span class="btn tomato">Hello</span>
+       <span>Hello</span>
+       <span class="btn teal">Hello</span>
+       <span class="btn tomato">Hello</span>
+       <span>Hello</span>
+       <span class="btn teal">Hello</span>
+       <span class="btn tomato">Hello</span>
+       <span>Hello</span>
+       <span class="btn teal">Hello</span>
+       <span class="btn tomato ">Hello</span>       
+    </body>
+</html>
+
+
+<!--
+  inline은 margin 좌우만 적용된다.
+  상하가 적용되기 위해 block를 해주어야 한다.
+
+  classes란
+  각각 속성을 적용하고 싶을때 
+   id로 적용해서 할수도 있찌만 다른방법이다.
+
+   #대신 . 으로 표신한다 이거를 클래스 라고 선언한다.
+
+   id는 하나만 가능하고 class 는 여러개 가능하다
+   <span id="sample"> chewpi</span>
+   <span class ="sample1 sample2 sample3"> chewpi</span>
+
+    정보가 겹치는 부분은 따로 클래스를 만든다.
+         .teal {
+            background-color: gray;
+            padding: 5px 10px
+            border-radius: 5px;
+          }
+          .tomato{
+            background-color: tomato;
+            color: red;
+            padding: 5px 10px
+            border-radius: 5px;
+          }
+
+          --------------------------------
+          .teal {
+            background-color: gray;
+ 
+          }
+          .tomato{
+            background-color: tomato;
+            color: red;
+         
+          }
+        .btn {
+            padding: 5px 10px
+            border-radius: 5px;
+        }
+
+   Selector란 하나로 그루핑하는것을 말한다.
+          #tomato1,
+          #tomato2,
+          #tomato3,
+          #tomato4,
+          #tomato5{
+            background-color: tomato;
+          }
+.-->

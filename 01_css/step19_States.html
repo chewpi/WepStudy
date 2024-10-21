@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+            div{                
+                width:150px;
+                height:150px;         
+                border-radius: 10px;
+                background-color: rgb(207, 184, 134);
+            }
+            button{
+                width:50px;
+                height:70px;         
+                border-radius: 10px;
+                background-color: blue;
+            }
+            button:active{
+                background-color: yellow;
+            }
+            button:hover{
+                background-color: green;
+            }
+            button:hover{
+                background-color: green;
+            }
+
+         
+            input:focus{
+                background-color: blueviolet;
+            }
+
+            a:visited{
+                background-color: red;
+            }
+            a:focus{
+                background-color: red;
+            }
+            a:hover{
+                background-color: red;
+            }
+
+            form{
+                border: 1px solid seashell;
+                display:flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+            form:focus-within{
+                border-color:  seagreen;
+            }
+            form:hover input{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <button> hell </button>
+            
+            <input type="text" />
+            <input type="text" />
+
+            <a href="http://apple.com">Go to Apple</a>
+        </form>
+    </body>
+</html>
+
+
+<!--
+ 
+  <button> hell </button>
+            button:active{
+                background-color: yellow;
+            }
+            button:hover{
+                background-color: green;
+            }
+            button:hover{
+                background-color: green;
+            }
+
+    <input type="text" />
+    <input type="text" />
+            input:focus{
+                background-color: blueviolet;
+            }
+
+    아래처럼 했을시 form안에 요소들이 포커스 되었을시
+    form 도 포커스 상태가 된다.
+            form{
+                border: 1px solid seashell;
+                display:flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+            form:focus-within{
+                border-color:  seagreen;
+            }
+            <form>
+                <button> hell </button>
+            </form>
+    아래처럼 form 이 hover가 되면 반대가 된다.         
+            form:hover input{
+                background-color: red;
+            }
+.-->

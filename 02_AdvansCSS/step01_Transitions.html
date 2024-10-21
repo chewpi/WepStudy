@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        <style>
+            a{
+                color: red;
+                background-color: tomato;
+                text-decoration: none;
+                border-radius: 10px;
+                font-size: 55px;
+                transition: all 5s ease-in-out;
+            }
+            a:hover{
+                border-radius : 20px;
+                color: tomato;
+                background-color: wheat;
+            }
+        </style>
+         <body>
+            <a href="@">go home</a>        
+         </body>
+    </head>    
+</html>
+
+<!--
+  변화를 에니메이션으로 만드는 방법
+
+ transition 이라는 속성은 state가 없는 요소에 붙여야 된다.
+ hover가 아니라 위에
+ transition: background-color 10s  ease-in-out
+ 10초간 변화한다.
+ 
+
+ transition: background-color 10s  ease-in-out , color 5s ease-in-out;
+         transition: all 5s ease-in-out;  변경가능하다.
+
+.-->

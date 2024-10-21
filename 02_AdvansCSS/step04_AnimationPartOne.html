@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        <style>
+            @keyframes superSexyCoinFlip{
+                from{
+                    transform: rotateX(0);
+                }to{
+                    transform: rotateX(360deg) translateX(100px);
+                }
+            }
+           img{
+                border: 5px solid black;
+                border-radius: 50px;
+                transition:  transform 5s ease-in-out;
+           }
+           img:hover{
+                transform: rotateX(90deg);
+                animation: superSexyCoinFlip 5s ease-in-out;
+            }
+        </style>
+         <body>
+            <img src="img/logo.png"/>
+         </body>
+    </head>    
+</html>
+
+<!--
+
+ 그동안은 이벤트가 발생해야된다.
+
+
+ 무한반복 출력
+            @keyframes superSexyCoinFlip{
+                from{
+                    transform: rotateX(0);
+                }to{
+                    transform: rotateX(360deg);
+                }
+            }
+
+            img:hover{
+                transform: rotateX(90deg);
+                animation: superSexyCoinFlip 5s ease-in-out;
+            }
+.-->

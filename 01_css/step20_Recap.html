@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+            div{                
+                width:150px;
+                height:150px;         
+                border-radius: 10px;
+                background-color: rgb(207, 184, 134);
+            }
+            button{
+                width:50px;
+                height:70px;         
+                border-radius: 10px;
+                background-color: blue;
+            }
+            button:active{
+                background-color: yellow;
+            }
+            button:hover{
+                background-color: green;
+            }
+            button:hover{
+                background-color: green;
+            }
+
+         
+            input:focus{
+                background-color: blueviolet;
+            }
+
+            a:visited{
+                background-color: red;
+            }
+            a:focus{
+                background-color: red;
+            }
+            a:hover{
+                background-color: red;
+            }
+
+            input::placeholder{
+                color: yellowgreen;
+            }
+
+            p::selection{
+                background-color: yellowgreen;
+            }    
+            p::first-letter{
+                color: white;
+                font-size: 50px;
+                background-color: yellowgreen;
+            }    
+            p::first-line{
+                color: white;
+                font-size: 50px;
+                background-color: yellowgreen;
+            }    
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="name"/>
+        </form>
+
+        <p>
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting
+            industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever 
+            since the 1500s, when an ...
+        </p>
+    </body>
+</html>
+
+
+<!--
+  input::placeholder
+
+
+  p::selection 은 드래그 해서 선택했을시 칼라이다.
+  p::first-letter 첫번째 글자만 바꿔준다.
+   p::first-line 첫줄만 상태변화 시킨다.
+.-->

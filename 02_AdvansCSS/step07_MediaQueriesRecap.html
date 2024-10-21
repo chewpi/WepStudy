@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        <style>
+            body{
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+
+            }
+            div{
+                background-color: black;
+                width:  200px;
+                height: 200px;
+            }       
+            @media screen and (max-width: 600px) {
+                div{
+                    background-color: blue;
+                }
+            }
+            @media screen and (max-width: 601px) and (max-width:1200px) and (orientation: portrait){
+                div{
+                    background-color: red;
+                }
+            }
+
+            @media screen and (orientation:landscape){
+                span{
+                    display:none;
+                }
+            }
+
+            @media print{
+                body{
+                    background-color: tomato;
+                }
+            }
+        </style>
+         <body>
+            <div></div>
+            <span>Please Flip your phone!!!!!</span>
+         </body>
+    </head>    
+</html>
+
+<!--
+프린트시 칼라를 적용할수 있따.
+바뀐게 보이느냐
+ @media print{
+                body{
+                    background-color: tomato;
+                }
+            }
+.-->

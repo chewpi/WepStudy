@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+          body{
+            height: 1000vh;
+            margin: 50px;
+          }      
+      
+          div{                
+            width:150px;
+            height:150px;         
+            background-color: blue;
+            position:relative;
+          }
+          div:first-child{
+            background-color: tomato;
+          }
+          div:last-child{
+            background-color: teal;
+          }
+          span{
+            background-color: tomato;
+          }
+    
+          span:nth-child(even)
+          {
+            background-color: yellow;
+          }
+        </style>
+
+    </head>
+    <body>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+
+    </body>
+</html>
+
+
+<!--
+
+div 마지막 항목 색을 바꾼다..가장아래쪽.
+이걸 sudo selecter라한다.
+   div:last-child{
+        background-color: teal;
+   }
+   div:first-child{
+
+   해당 순서번호만 색이 변한다.
+   span:nth-child(2),
+   span:nth-child(4)
+   {
+       background-color: yellow;
+   }
+   번갈아 가면서 반복적으로 할때 even 메소드를 사용한다.
+   span:nth-child(even), 짝수
+   span:nth-child(odd), 홀수
+    
+    span:nth-child(2n+1) 2깨씩마다 바뀜.
+
+.-->

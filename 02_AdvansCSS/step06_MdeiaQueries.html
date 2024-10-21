@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        <style>
+            body{
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+
+            }
+            div{
+                background-color: black;
+                width:  200px;
+                height: 200px;
+            }       
+            @media screen and (max-width: 600px) {
+                div{
+                    background-color: blue;
+                }
+            }
+            @media screen and (max-width: 601px) and (max-width:1200px) and (orientation: portrait){
+                div{
+                    background-color: red;
+                }
+            }
+
+            @media screen and (orientation:landscape){
+                span{
+                    display:none;
+                }
+            }
+        </style>
+         <body>
+            <div></div>
+            <span>Please Flip your phone!!!!!</span>
+         </body>
+    </head>    
+</html>
+
+<!--
+Media Query 는 오직 csws만을 이용해서 스크린의 사이즈를 알수 있는 방법
+
+            @media screen and (max-width: 600px){
+                div{
+                    background-color: tomato;
+                }
+            }
+            범위를 지정해 줄수 있따.
+            @media screen and (max-width: 600px) and (max-width:750px){
+                div{
+                    background-color: tomato;
+                }
+            }
+
+            방향을 지정해 줄수 있따.
+            @media screen and (max-width: 601px) and (max-width:1200px) and (orientation: portrait){
+                div{
+                    background-color: red;
+                }
+            }
+.-->

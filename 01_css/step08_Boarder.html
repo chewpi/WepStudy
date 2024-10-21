@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+          * {
+                border: 2px dashed black;
+          }
+          html{
+                background-color: tomato;
+          }
+          body{          
+            margin: 20px;  
+            padding: 20px ;
+            background-color: yellow;
+          }
+          div{
+            padding: 10px;
+        
+          }          
+          #first {
+            background-color: whitesmoke;
+            width: 150px;
+            height: 150px;
+          }
+          #second {
+            background-color: teal;
+            width: 50px;
+            height: 50px;
+          }
+          #third {
+            background-color: red;
+            width: 30px;
+            height: 30px;
+          }
+       
+          span {
+            border: 2px dotted black;
+          }
+        </style>
+
+    </head>
+    <body>
+        <div id="first">
+            <div id="second">
+                <div id="third">
+                    <span>Hello</span>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
+
+
+<!--
+   Boarder는 말 그대로 box의 경계이다.
+   border 는 너비 스타일 색 순으로 정렬
+
+   *는 전부 적용을 의미한다.
+   * {
+                border: 2px solid black;
+   }
+
+   cascade에 위해 아래처럼 선언하면 이것만 변경 가능하다
+       span {
+            border: 2px dotted black;
+          }
+.-->

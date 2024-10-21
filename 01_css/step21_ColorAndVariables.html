@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+            :root{
+                --main-color : #fcce00;
+                --default-border: 1px solid var(var(--main-color));
+            }
+            body{
+                height: 100vh;
+                margin: 50px;
+            }
+            p{
+                color: #FFFFFF ;
+                color: rgb(red, green, blue);
+                color: rgba(red, green, blue, 1)
+            }
+
+            p{
+                color:  var(var(--main-color));
+                border: var(--default-border);
+            }
+        </style>
+    </head>
+    <body>    
+        <p>
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting
+            industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever 
+            since the 1500s, when an ...
+        </p>
+    </body>
+</html>
+
+
+<!--
+  css custom properties 
+  변수를 선언
+   :root{
+          --main-color : #fcce00;
+          --default-border: 1px solid var(var(--main-color));
+    }
+          
+    변수를 사용
+    p{
+           color:  var(var(--main-color));
+           border: var(--default-border);
+    }
+.-->

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+          body{
+            height: 100vh;
+            margin: 20px;
+            display: flex; 
+            justify-content: center;  
+            justify-content: flex-end; 
+            justify-content: flex-start; 
+            justify-content: space-evenly;
+            justify-content: space-between;
+            align-items: center;
+            align-items: center;
+          }      
+          span {
+            background-color: blue;
+            padding: 20px;
+            margin: 30px;
+          }       
+          div{
+            display:  inline-block;
+            width:50px;
+            height:50px;
+            background-color: teal;
+          }
+          #second{
+            background-color: red;
+          }
+        </style>
+
+    </head>
+    <body>
+      <div></div>
+      <div id="second"></div>
+      <div></div>
+    </body>
+</html>
+
+
+<!--
+   
+    inline block 은 반응형 웹에 문제가 생긴다.
+   flexbox 를 사용한다.
+   flexbox 규칙-    자식 엘리먼트에 말하지 않고 부모 엘리먼트에만 말한다.
+      <div></div> 의 무모는 <body> 이다
+      무모를 flex container 로 만들어야한다.  
+       body{
+            margin: 20px;
+            display: flex; //flex 선언
+            justify-content: center;  // 가운데 기준
+            justify-content: flex-end; //오른쪽 기준
+            justify-content: flex-start; //왼족기준
+            justify-content: space-evenly; //빈공간을 같은 크기로 나누어서 배치
+            justify-content: space-between  //자동간격.
+        }   
+
+        div{
+            display:  inline-block; //삭제한다.
+        }
+
+         justify-content: 는 x축을 관리
+         align-items 는 y축을 관리
+
+        align-items 를 적용하기 위해 bocy 사이즈를 
+        늘려주어야 한다 vh는 viewport height를 말한다.
+          body{
+            height: 100vh; 100%와 같다. 
+          }
+        
+        align-items: stretch 는 자식이 height값이 있으면 적용이 안된다.; 늘어나는 기능이다.
+
+        displya:flex 를 하고 주측 크로스측 값을 변경한다.
+
+.-->

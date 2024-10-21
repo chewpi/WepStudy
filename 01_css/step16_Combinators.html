@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Home-My FirstWebSite.
+        </title>
+     
+        <link href="css/styless.css" rel="stylesheet"/>
+        
+        <style>
+          body{
+            height: 1000vh;
+            margin: 50px;
+          }      
+          span{
+            color: tomato;
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
+            text-decoration: underline;
+          }
+          p span{
+            color: white;
+            text-decoration: none;
+          }
+          div > span{
+            text-decoration: underline;
+          }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <span>hello</span>
+            <p>
+                Your AAA membership is a membership for life. Use it every day to get discounts and deals at places to shop 
+                aro<span>hello</span>
+            </p>
+        </div>
+    </body>
+</html>
+
+
+<!--
+        <div>
+            <span>hello</span>
+            <p>
+                Your AAA membership is a membership for life. Use it every day to get discounts and deals at places to shop 
+                aro<span>hello</span>
+            </p>
+        </div>
+
+        안쪽 span 까지 적용할 경우 아래처럼 선언
+            p span{
+                color: teal;
+            }
+
+text-decoration: underline; 밑줄이 그어진다.
+
+           span 표시가 2개인데 margin 을 넣으면 2개가
+           적용된다 이를 방지하기 위해
+           p span {  text-decoration: none;}를 넣어준다.
+           좋은 해결방법은 아니다.
+
+           아래와 같이 div 바로밑 span만 적용하게 해야한다.
+           div > span{
+            text-decoration: underline;
+          }
+            아래와 같이 하면 2번째 span만 적용된다.
+          p > span{
+            text-decoration: underline;
+          }
+.-->
