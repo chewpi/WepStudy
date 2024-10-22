@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Talk</title>
+</head>
+    
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>   
+        <div class="status-bar__column">
+            <span>18:43</span>            
+        </div> 
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>           
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kokoa Account, log in with you email or phone number</p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email of Phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" VALUE="Log In"/>
+        <a href="#">Find Kokoa Account or Password"</a>
+    </form>
+
+    <script src="https://kit.fontawesome.com/76b69643f0.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!--
+모든 웹페이지는 index.html 을 찾는다.
+처음 단축키 ! 누르면 기본이 나온다.
+https://heroicons.dev/  무료 아이콘
+https://fontawesome.com/ 무료 폰트
+
+SCRIPT는 항상 마지막에 와야한다.
+----------------------------------------------------------------------------------------------------------
+크고 복잡한 프로젝트일수록 네이밍 규칙이 중요하다. 프로젝트마다 규칙이 조금씩 다르겠지만, 많이 통용되고 있는 BEM에 대해 정리해보고자 한다.
+BEM(Block, Element, Modifier)도 네이밍 방법론의 하나일뿐이다. 이름에서 알 수 있듯이 Block(블록), Element(요소), Modifier(수정자)를 기준으로 작성한다.
+클래스명이 길다고 느껴질 수 있지만, 클래스만 보고도 누구나 이해하기 쉽다는 게 장점이다. BEM의 가장 큰 특징은 ID를 절대 사용하지 않는다는 점이다.
+BEM은 꽤 많은 사이트에서 채택되었다.
+네이밍 방법론
+    BEM (Block, Element, Modifier)
+    SMACSS (Scalable and Modular Architecture for CSS)
+    OOCSS (Object Oriented CSS)
+BEM의 장점
+목적과 기능을 명확히 전달한다.
+요소의 구조를 효율적으로 전달한다.
+css 명시도를 항상 낮은 수준으로 유지하기 때문에 구체성으로 인한 코드의 길어짐을 방지할 수 있다.
+Block (블록)
+block(블록)은 페이지 전체 Element(요소)를 의미하거나 하위 Element(요소)를 감싸는 컨테이너를 의미한다. 블록끼리는 상호작용할 수 있지만, 우선순위나 계층이 없다.
+Naming
+문자, 숫자, 대시(-)로 구성될 수 있다.
+    HTML
+    block, box1, list-container 모두 블록 역할을 한다. 클래스를 적용할 수 있는 DOM 노드라면 뭐든 블록이 될 수 있다.
+    <div class="block">
+    ...
+    </div>
+    <div class="box1">
+    ...
+    </div>
+    <div class="list-container">
+    ...
+    </div>
+CSS
+클래스 이름만 사용한다.
+태그 이름, ID 중첩 사용 금지
+다른 블록에 대한 종속성이 없다.
+    Good
+    .block {
+    color: #e5e5e5;
+    }
+    Bad
+    div.block {
+    color: #e5e5e5;
+    }
+
+    #id.block {
+    color: #e5e5e5;
+    }
+
+
+Element (요소)
+블록의 하위 요소이다. 모든 요소는 상위 블록과 연결된다.
+
+Naming
+문자, 숫자, 대시(-) 및 밑줄(_)로 구성될 수 있다.
+블록이름__요소이름의 형태로 작성한다.
+
+    HTML
+    <div class="block">
+    <div class="block__elem"></div>
+    </div>
+    <div class="box">
+    <div class="box__apple"></div>
+    </div>
+    <div class="wrapper">
+    <div class="wrapper__item"></div>
+    </div>
+CSS
+클래스 이름만 사용한다.
+태그 이름, ID 중첩 사용 금지
+    Good
+    .box__apple {
+    background-color: red;
+    }
+    Bad
+    .box .box__apple {
+    background-color: red;
+    }
+    div.box__apple {
+    background-color: red;
+    }
+
+
+Modifier (수정자)
+Naming
+수정자의 이름은 문자, 숫자, 대시(-) 및 밑줄(_)로 구성될 수 있다.
+블럭이름--수정자이름 혹은 요소이름--수정자이름 형태로 작성한다.
+수정자의 이름이 길거나 공백이 있다면 하나의 대시를 사용한다. 블럭이름--border-black
+
+HTML
+Good
+블록 혹은 요소의 클래스는 그대로 두고 수정자를 추가한다.
+
+    <div class="block block--size-big">
+    <div class="block__elem block__elem--mod"></div>
+    </div>
+    <div class="box box--size-small">
+    <div class="box__elem box__elem--border-red"></div>
+    </div>
+Bad
+기존 블록 혹은 요소의 클래스를 아예 삭제하고 수정자로만 작성한 경우
+
+    <div class="block--size-big">
+    <div class="block__elem--mod"></div>
+    </div>
+    <div class="box--size-small">
+    <div class="box__elem--border-red"></div>
+    </div>
+CSS
+수정 시 수정자 클래스명을 사용한다.
+
+1) 블록 수정자를 기반으로 요소를 수정하는 경우
+    .block--mod .block__elem {
+    background-color: black;
+    }
+2) 요소 수정자를 사용하여 수정하는 경우
+부모 블록의 클래스명을 사용하지 않고, 요소의 자체적인 수정자를 사용한다.
+
+    .block__elem--mod {
+    background-color: black;
+    }
+.-->
+
+
