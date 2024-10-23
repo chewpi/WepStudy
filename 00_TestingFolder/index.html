@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Talk</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin : 0;
+            padding : 0;
+        }
+
+        .containo-mother{
+            /*_______________________________________________
+            height: 현재 화면에서 50vh는 50%사이즈를 말한다.
+            _______________________________________________*/        
+            height: 50vh;
+            width: 50vh;
+            background-color: black;
+            border : 3px solid red;
+            /*_______________________________________________
+            무모 필수요소 이다 
+            
+            display: flex;
+            - flex 레이아웃을 적용
+            
+            flex-direction: row;
+            flex-direction : row; (row || column || row-reverse || column-reverse)
+            - 내부 요소들의 정렬 방향
+            - row 는 가로방향 정렬
+            - column 은 세로방향 정렬
+            - reverse 는 각 방향의 반대에서 부터 정렬됨.
+
+            justify-content: space-evenly; 축 수평방향 정렬
+                flex-start : flex 방향 시작점 기준 (기본값)
+                flex-end : flex 방향 끝점 기준
+                center : 중앙 정렬
+                space-between : flex 방향 양 끝점 기준 (양 끝에 붙혀서)
+                space-around : flex 방향 중앙점과 양 끝 기준 (양 끝과도 간격을 둠)
+
+            align-items: center; 축 수직 방향 정렬
+                stretch : 수직 방향에 최대한 늘려서 (기본값)
+                flex-start : 수직 방향에 위쪽
+                flex-end : 수직 방향에 아래쪽
+                center : 수직 방향 가운데
+                baseline : 컨테이너의 기준선에 배치
+         
+            
+            flex-wrap: wrap;
+            flex-wrap: wrap 을 적용하면 자동 줄바꿈을 해줍니다
+            _______________________________________________*/        
+            
+            
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;            
+        }
+
+        .containo-mother__first{            
+             /*_______________________________________________
+             자식 필수 요소
+             flex : <grow (팽창 지수)> <shrink (수축 지수)> <basis (기본 크기)>
+
+             _______________________________________________*/  
+            flex: 2 0 auto;
+            margin : 1vh 1vh 1vh 1vh;
+            background-color: green;
+            
+            padding: 60px;
+            border: 1px dotted;
+            border-color: yellow;
+        }
+        .containo-mother__second{
+            margin : 1vh 1vh 1vh 1vh;
+            background-color: blue;
+            flex: 3 0 auto;
+        }
+        .containo-mother__third{
+            margin : 1vh 1vh 1vh 1vh;
+            background-color: yellow;
+            flex: 4 0 auto;
+        }
+    </style>
+</head>
+    
+<body> 
+   <div class="containo-mother"> 
+        <div class="containo-mother__first"> 
+            <span> 첫번째 </span>
+        </div>  
+        <div class="containo-mother__second"> 
+            <span> 두번째 </span>
+        </div>          
+        <div class="containo-mother__third">
+            <span> 세번째. </span>
+        </div>  
+   </div>   
+</div> 
+
+ 
+</div> 
+ 
+</body>
+</html>
