@@ -1,3 +1,8 @@
+.user-component{
+    justify-content: space-between;
+}
+
+
 .user-component,
 .user-component__colume:first-child{
     display: flex;
@@ -10,17 +15,21 @@
     border-radius: 27px;
     margin-right: 20px;
 }
+
 .user-component__title{
     font-weight: 600;
     font-size: 22px;
 }
+
+.user-component__title--not-bold{
+    font-weight: 400;
+ }
+
 .user-component__subtitle{
     margin-top:5px;
     font-size: 17px;
     color:rgba(0, 0, 0, 0.5);
 }
-
-
 
 .user-component__avatar--xl{
     width:80px;
@@ -33,6 +42,11 @@
     border-radius: 25px;
 }
 
-.user-component__title--not-bold{
-   font-weight: 100;
+.user-component__colume:last-child{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__time{
+    margin-bottom: 5px;
+    display: block;
 }

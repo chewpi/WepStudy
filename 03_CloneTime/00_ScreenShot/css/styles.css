@@ -8,12 +8,16 @@
 @import "components/screen-header.css";
 @import "components/friends.css";
 @import "components/user-component.css";
+@import "components/badge.css";
+
 
 body{
     color: #2e363e;
     font-family: "Open Sans", sans-serif;
 }
-
+.main-screen{
+    padding: 0px var(--horizontal-space);
+}
 .welcome-header{
     margin:  90px 0px;
     text-align: center;
