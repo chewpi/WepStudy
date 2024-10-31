@@ -38,16 +38,16 @@
             justify-content: space-evenly; 축 수평방향 정렬
                 flex-start : flex 방향 시작점 기준 (기본값)
                 flex-end : flex 방향 끝점 기준
-                center : 중앙 정렬
-                space-between : flex 방향 양 끝점 기준 (양 끝에 붙혀서)
-                space-around : flex 방향 중앙점과 양 끝 기준 (양 끝과도 간격을 둠)
+                center          : 중앙 정렬
+                space-between   : flex 방향 양 끝점 기준 (양 끝에 붙혀서)
+                space-around    : flex 방향 중앙점과 양 끝 기준 (양 끝과도 간격을 둠)
 
             align-items: center; 축 수직 방향 정렬
-                stretch : 수직 방향에 최대한 늘려서 (기본값)
-                flex-start : 수직 방향에 위쪽
-                flex-end : 수직 방향에 아래쪽
-                center : 수직 방향 가운데
-                baseline : 컨테이너의 기준선에 배치
+                stretch     : 수직 방향에 최대한 늘려서 (기본값)
+                flex-start  : 수직 방향에 위쪽
+                flex-end    : 수직 방향에 아래쪽
+                center      : 수직 방향 가운데
+                baseline    : 컨테이너의 기준선에 배치
          
             
             flex-wrap: wrap;
@@ -67,6 +67,32 @@
              /*_______________________________________________
              자식 필수 요소
              flex : <grow (팽창 지수)> <shrink (수축 지수)> <basis (기본 크기)>
+
+                https://flexboxfroggy.com/#ko   게임
+                https://cssgridgarden.com/#ko   그리드 게임
+
+
+                
+flex-start: 요소들을 컨테이너의 왼쪽으로 정렬합니다.
+flex-end: 요소들을 컨테이너의 오른쪽으로 정렬합니다.
+center: 요소들을 컨테이너의 가운데로 정렬합니다.
+space-between: 요소들 사이에 동일한 간격을 둡니다.
+space-around: 요소들 주위에 동일한 간격을 둡니다.
+
+
+
+flex-start: 요소들을 컨테이너의 꼭대기로 정렬합니다.
+flex-end: 요소들을 컨테이너의 바닥으로 정렬합니다.
+center: 요소들을 컨테이너의 세로선 상의 가운데로 정렬합니다.
+baseline: 요소들을 컨테이너의 시작 위치에 정렬합니다.
+stretch: 요소들을 컨테이너에 맞도록 늘립니다.
+
+flex-direction
+row: 요소들을 텍스트의 방향과 동일하게 정렬합니다.    
+row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다. 
+
+column: 요소들을 위에서 아래로 정렬합니다.
+column-reverse: 요소들을 아래에서 위로 정렬합니다.
 
              _______________________________________________*/  
             flex: 2 0 auto;
